@@ -97,6 +97,11 @@ a {
         font-weight: 500;
         font-size: 24px;
     }
+    .font70096{
+        font-weight: 700;
+        font-size: 96px;
+
+    }
     .kasa__header-imgContainer img{
         width: 335px !important;
         height: 111px;
@@ -192,5 +197,8 @@ height: 29px;
     }
     .btn-slide img{
         height: 19px;
+    }
+    .txt-center{
+        text-align: center;
     }
 }

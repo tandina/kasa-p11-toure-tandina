@@ -10,10 +10,12 @@ export default function Equipments(props) {
 
     return (
         liste[houseClicked].equipments.map((item,index) => {
+            console.log({index})
             return (
                 <div key={index} className='house__info--loop' >
                     <p key={index}>{item}</p>
                 </div>
                 );
+                
       }));
     };
