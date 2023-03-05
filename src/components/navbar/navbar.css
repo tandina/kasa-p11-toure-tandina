@@ -1,0 +1,37 @@
+.kasa__navbar{
+    padding: 2rem 6rem;
+}
+.kasa__navbar-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.kasa__navbar-links_logo{
+    margin-right: 2rem;
+    height: 68px;
+    width: 210.32154846191406px;
+}
+
+.kasa_navbar-links_container{
+    display: flex;
+flex-direction: row;
+align-items: baseline;
+font-weight: 500;
+font-size: 24px;
+line-height: 25px;
+list-style-type: none;
+}
+
+
+.kasa_navbar-links_container li
+{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    list-style-type: none;
+    padding: 2rem;
+}
+.active {
+    text-decoration-line: underline;
+}

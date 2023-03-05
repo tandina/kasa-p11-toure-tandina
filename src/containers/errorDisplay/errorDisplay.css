@@ -1,0 +1,26 @@
+.kasaError {
+    display: flex;
+flex-direction: column;
+align-items: center;
+color: var(--color-text);
+font-family: 'Montserrat';
+font-style: normal;
+}
+.underline {
+    text-decoration-line: underline;
+}
+.KassaError__number
+{
+    font-weight: 700;
+    font-size: 288px;
+}
+.KassaError__Text
+{
+    font-weight: 500;
+font-size: 36px;
+padding-bottom: 88px;
+}
+.kasa__footer
+{
+    margin-top: 122px;
+}

@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    
+}
+.App{
+    position: relative;
+    height: 1024px;
+    width: 1440px;
+}
+body {
+    background: var(--color-bg);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+a {
+    color:unset;
+    text-decoration: none;
+}
+.visiblePc{
+    visibility: initial;
+}
+.collapsePc{
+    visibility: collapse;  
+}
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__padding{
+    padding: 4rem 6rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section__margin{
+    margin: 4rem 6rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 700px){
+    .section__padding{
+        padding: 4rem;
+    }
+    .section__margin{
+        margin: 4rem;
+    }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 550px){
+    .section__padding{
+        padding: 4rem 2rem;
+    }
+    .section__margin{
+        margin: 4rem 2rem;
+    }
+    .kasa__mobile{
+        padding: 17px;
+        max-width: 550px;
+    }
+    .kasa__navbar-links_logo img{
+        margin-right: 2rem;
+        width: 145px !important;
+        height: 47px;
+        margin-right: 1rem;
+    }
+    .kasa_navbar-links_container li{
+        padding: 5px !important;
+    }
+    *{
+        width: fit-content !important;
+    }
+    .font40012{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .font50012{
+        font-weight: 500;
+        font-size: 12px !important;
+        padding: 10px;
+    }
+    .font50013{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .font50014{
+        font-weight: 500;
+        font-size: 14px !important;
+    }
+    .font50018{
+        font-weight: 500 !important;
+        font-size: 18px!important;
+    }
+    .font50024{
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .kasa__header-imgContainer img{
+        width: 335px !important;
+        height: 111px;
+        
+    }
+    .position-text-mobile{
+        top: 53px;
+    left: 49px;
+    }
+    .house__info{
+        display: flex;
+        flex-direction: column;
+    }
+    .KasaGalery__container{
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        margin:0;
+        width: 372px !important;
+    }
+    .container-slider,
+    .KasaGalery__container-thumb_img img{
+        width: 335px !important;
+        height: 255px;
+        margin: 0px;
+    }
+    .KasaGalery__container-thumb{
+        width: 89% !important;
+        margin: 0;
+        height: 255px;
+        margin: 10px 0px 10px 0px;
+    }
+    .KasaGalery__container-thumb_text{
+        width: 80% !important;
+    }
+    .KasaGalery__container-thumb p{
+        left: 11px;
+        top: -74px;
+    }
+    .kasa__footer-logo img{
+        width: 122px !important;
+        height: 39px;
+    }
+    .kasa__footer{
+        margin-top: 122px;
+height: 209px;
+width: 375px !important;
+    }
+    .dropdown-mobile{
+        width: 335px !important;
+height: 29px;
+    }
+    .menu-item-mobile{
+        width: 330px !important;
+    }
+    .house__info--ownerpic img{
+        width: 32px !important;
+    }
+    .house__info--owner{
+        align-items: center;
+    }
+    .star{
+        width:18px !important;
+        font-size: 18px !important;
+    }
+    .collapse{
+        visibility: collapse;  
+    }
+    .visible{
+        visibility: initial;
+    }
+    .rowMobile
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    .padding20{
+        padding: 20px;
+    }
+    .width100{
+        width: 100% !important;
+    }
+    .dropdown-house{
+        padding: 10px 0px 10px 0px;
+    }
+    .star-mobile{
+        padding-right: 132px;
+    }
+    .menu{
+        display: contents;
+    }
+    .btn-slide img{
+        height: 19px;
+    }
 }

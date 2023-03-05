@@ -1,0 +1,36 @@
+.KasaGalery__container{
+    background: #F7F7F7;
+border-radius: 25px;
+margin: 2rem 6rem;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.KasaGalery__container-thumb
+{
+    height: 340px;
+    width: 340px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.KasaGalery__container-thumb_img img{
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.KasaGalery__container-thumb_text{
+    font-weight: 500;
+    font-size: 18px;
+    top: -76px;
+    position: relative;
+    left: 44px;
+    font-family: 'Montserrat';
+font-style: normal;
+width: 60%;
+color: var(--color-bg);
+
+}

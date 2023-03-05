@@ -1,0 +1,24 @@
+.kasa__header {
+    padding: 2rem 6rem;
+
+}
+.kasa__header-imgContainer{
+    background: #000000;
+mix-blend-mode: darken;
+opacity: 0.7;
+border-radius: 25px;
+}
+.kasa__header-imgContainer img{
+
+    opacity: 0.6;
+    border-radius: 25px;
+    position: relative;
+}
+.kasa__header-texte {
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--color-bg);
+    position: absolute !important;
+    top: 106px;
+    left: 373px;
+}

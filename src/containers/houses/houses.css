@@ -1,0 +1,73 @@
+.house-container{
+    color: var(--color-text);
+    font-family: --font-family;
+    padding: 2rem 6rem;
+}
+.house__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ h1{
+    font-weight: 500;
+font-size: 36px;
+}
+.house__info--title{
+    width: fit-content;
+}
+.house__info--owner{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.house__info--ownerName{
+    padding: 10px;
+align-items: flex-end;
+display: flex;
+flex-direction: column;
+}
+.house__info--ownerpic img
+{
+    width: 64px;
+    border-radius: 35px;
+}
+
+.font400{
+    font-weight: 400 !important;
+font-size: 18px !important;
+}
+.font500{
+    font-weight: 500 !important;
+font-size: 18px !important;
+}
+.house__info--tags{
+    font-weight: 500;
+font-size: 14px;
+color: var(--color-bg);
+width: fit-content;
+
+}
+.house__tags{
+    display: flex;
+flex-direction: row;
+}
+.house__info--tags p{
+    background: var( --color-text);
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    margin:20px 5px 20px 5px;
+    cursor: default;
+}
+.house-dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.gifLoader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16%;
+}
