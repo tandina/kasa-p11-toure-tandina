@@ -201,4 +201,8 @@ height: 29px;
     .txt-center{
         text-align: center;
     }
+    .slide img{
+        width:335px !important;
+        height: 255px;
+    }
 }
