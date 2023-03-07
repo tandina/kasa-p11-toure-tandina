@@ -5,6 +5,7 @@ align-items: center;
 color: var(--color-text);
 font-family: 'Montserrat';
 font-style: normal;
+width: 1440px;
 }
 .underline {
     text-decoration-line: underline;
