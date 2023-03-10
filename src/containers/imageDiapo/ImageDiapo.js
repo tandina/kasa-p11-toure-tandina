@@ -37,24 +37,26 @@ export default function Equipments(props) {
     }
 
     const prevSlide = () => {
-
+        const lastPic = liste[houseClicked].pictures.length;
+    
         if(slideAnim.index !== 1 && !slideAnim.inProgress){
-
+    
             setSlideAnim({index: slideAnim.index - 1, inProgress: true})
-
+    
             setTimeout(() => {
-                setSlideAnim({index:  slideAnim.index - 1, inProgress: false})
+                setSlideAnim({index: slideAnim.index - 1, inProgress: false})
             }, 400)
-        }
-        else if (slideAnim.index === 1 && !slideAnim.inProgress){
-
-            setSlideAnim({index: 5, inProgress: true})
-
+    
+        } else if (slideAnim.index === 1 && !slideAnim.inProgress){
+    
+            setSlideAnim({index: lastPic, inProgress: true})
+    
             setTimeout(() => {
-                setSlideAnim({index:  5, inProgress: false})
+                setSlideAnim({index: lastPic, inProgress: false})
             }, 400)
         }
     }
+    
 
     return (
         <div className="container-slider">
@@ -68,13 +70,22 @@ export default function Equipments(props) {
                     </div>
                 );
       })}
-      <BtnDiapo moveSlide={nextSlide} direction={"next"}/>
-      <BtnDiapo moveSlide={prevSlide} direction={"previous"}/>
+          
         <div className="indexShow">
-            <p className="indexText font500">
-               {slideAnim.index}/{liste[houseClicked].pictures.length}
-            </p>
+            
+            {liste[houseClicked].pictures.length > 1 && (
+                
+            <div>
+                <BtnDiapo moveSlide={prevSlide} direction={"previous"}/>
+                <p className="indexText font500">
+                    {slideAnim.index}/{liste[houseClicked].pictures.length}
+                </p>
+                <BtnDiapo moveSlide={nextSlide} direction={"next"}/>
+                </div>
+            )}
+            
         </div>
+        
       </div>
       )
     };
